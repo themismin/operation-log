@@ -9,6 +9,8 @@ class OperationLog extends Model
 {
     use HasDateTimeFormatter;
 
+    protected $connection = 'mysql_company';
+
     protected $table = 'admin_operation_log';
 
     protected $fillable = ['user_id', 'path', 'method', 'ip', 'input'];
@@ -25,12 +27,12 @@ class OperationLog extends Model
         'LINK', 'UNLINK', 'COPY', 'HEAD', 'PURGE',
     ];
 
-    public function __construct(array $attributes = [])
-    {
-        $this->connection = config('database.connection') ?: config('database.default');
+    // public function __construct(array $attributes = [])
+    // {
+    //     $this->connection = config('database.connection') ?: config('database.default');
 
-        parent::__construct($attributes);
-    }
+    //     parent::__construct($attributes);
+    // }
 
     /**
      * Log belongs to users.

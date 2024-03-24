@@ -1,14 +1,14 @@
 {
-  "name": "dcat-admin/operation-log",
+  "name": "themismin/operation-log",
   "description": "Dcat Admin 操作日志扩展",
   "type": "library",
-  "keywords": ["dcat-admin", "extension"],
-  "homepage": "https://github.com/dcat-admin/operation-log",
+  "keywords": ["themismin", "extension"],
+  "homepage": "https://github.com/themismin/operation-log",
   "license": "MIT",
   "authors": [
     {
-      "name": "Jiangqh",
-      "email": "841324345@qq.com"
+      "name": "themismin",
+      "email": "themismin@gmail.com"
     }
   ],
   "require": {
